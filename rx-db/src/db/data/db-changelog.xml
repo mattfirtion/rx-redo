@@ -5,13 +5,97 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
          http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+  <changeSet id="group-power-apr-10" author="matt">
+      <sqlFile path="com/mattfirtion/grouppower/group-power-apr-10.sql"/>
+  </changeSet>
+  <changeSet id="group-power-apr-11" author="matt">
+      <sqlFile path="com/mattfirtion/grouppower/group-power-apr-11.sql"/>
+  </changeSet>
+  <changeSet id="group-power-apr-12" author="matt">
+      <sqlFile path="com/mattfirtion/grouppower/group-power-apr-12.sql"/>
+  </changeSet>
+  <changeSet id="group-power-apr-13" author="matt">
+      <sqlFile path="com/mattfirtion/grouppower/group-power-apr-13.sql"/>
+  </changeSet>
+  <changeSet id="group-power-apr-14" author="matt">
+      <sqlFile path="com/mattfirtion/grouppower/group-power-apr-14.sql"/>
+  </changeSet>
+  <changeSet id="group-power-apr-15" author="matt">
+      <sqlFile path="com/mattfirtion/grouppower/group-power-apr-15.sql"/>
+  </changeSet>
   <changeSet id="group-power-apr-16" author="matt">
       <sqlFile path="com/mattfirtion/grouppower/group-power-apr-16.sql"/>
+  </changeSet>
+  <changeSet id="group-power-fall-08" author="matt">
+      <sqlFile path="com/mattfirtion/grouppower/group-power-fall-08.sql"/>
+  </changeSet>
+  <changeSet id="group-power-jan-10" author="matt">
+      <sqlFile path="com/mattfirtion/grouppower/group-power-jan-10.sql"/>
+  </changeSet>
+  <changeSet id="group-power-jan-11" author="matt">
+      <sqlFile path="com/mattfirtion/grouppower/group-power-jan-11.sql"/>
+  </changeSet>
+  <changeSet id="group-power-jan-12" author="matt">
+      <sqlFile path="com/mattfirtion/grouppower/group-power-jan-12.sql"/>
+  </changeSet>
+  <changeSet id="group-power-jan-13" author="matt">
+      <sqlFile path="com/mattfirtion/grouppower/group-power-jan-13.sql"/>
+  </changeSet>
+  <changeSet id="group-power-jan-14" author="matt">
+      <sqlFile path="com/mattfirtion/grouppower/group-power-jan-14.sql"/>
+  </changeSet>
+  <changeSet id="group-power-jan-15" author="matt">
+      <sqlFile path="com/mattfirtion/grouppower/group-power-jan-15.sql"/>
   </changeSet>
   <changeSet id="group-power-jan-16" author="matt">
       <sqlFile path="com/mattfirtion/grouppower/group-power-jan-16.sql"/>
   </changeSet>
+  <changeSet id="group-power-jul-09" author="matt">
+      <sqlFile path="com/mattfirtion/grouppower/group-power-jul-09.sql"/>
+  </changeSet>
+  <changeSet id="group-power-jul-10" author="matt">
+      <sqlFile path="com/mattfirtion/grouppower/group-power-jul-10.sql"/>
+  </changeSet>
+  <changeSet id="group-power-jul-11" author="matt">
+      <sqlFile path="com/mattfirtion/grouppower/group-power-jul-11.sql"/>
+  </changeSet>
+  <changeSet id="group-power-jul-12" author="matt">
+      <sqlFile path="com/mattfirtion/grouppower/group-power-jul-12.sql"/>
+  </changeSet>
+  <changeSet id="group-power-jul-13" author="matt">
+      <sqlFile path="com/mattfirtion/grouppower/group-power-jul-13.sql"/>
+  </changeSet>
+  <changeSet id="group-power-jul-14" author="matt">
+      <sqlFile path="com/mattfirtion/grouppower/group-power-jul-14.sql"/>
+  </changeSet>
+  <changeSet id="group-power-jul-15" author="matt">
+      <sqlFile path="com/mattfirtion/grouppower/group-power-jul-15.sql"/>
+  </changeSet>
+  <changeSet id="group-power-oct-09" author="matt">
+      <sqlFile path="com/mattfirtion/grouppower/group-power-oct-09.sql"/>
+  </changeSet>
+  <changeSet id="group-power-oct-10" author="matt">
+      <sqlFile path="com/mattfirtion/grouppower/group-power-oct-10.sql"/>
+  </changeSet>
+  <changeSet id="group-power-oct-11" author="matt">
+      <sqlFile path="com/mattfirtion/grouppower/group-power-oct-11.sql"/>
+  </changeSet>
+  <changeSet id="group-power-oct-12" author="matt">
+      <sqlFile path="com/mattfirtion/grouppower/group-power-oct-12.sql"/>
+  </changeSet>
+  <changeSet id="group-power-oct-13" author="matt">
+      <sqlFile path="com/mattfirtion/grouppower/group-power-oct-13.sql"/>
+  </changeSet>
+  <changeSet id="group-power-oct-14" author="matt">
+      <sqlFile path="com/mattfirtion/grouppower/group-power-oct-14.sql"/>
+  </changeSet>
   <changeSet id="group-power-oct-15" author="matt">
       <sqlFile path="com/mattfirtion/grouppower/group-power-oct-15.sql"/>
+  </changeSet>
+  <changeSet id="group-power-spring-09" author="matt">
+      <sqlFile path="com/mattfirtion/grouppower/group-power-spring-09.sql"/>
+  </changeSet>
+  <changeSet id="group-power-winter-09" author="matt">
+      <sqlFile path="com/mattfirtion/grouppower/group-power-winter-09.sql"/>
   </changeSet>
 </databaseChangeLog>
