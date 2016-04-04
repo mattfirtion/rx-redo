@@ -1,0 +1,31 @@
+buildscript {
+  repositories {
+    mavenCentral()
+  }
+  dependencies {
+    classpath "org.liquibase:liquibase-gradle-plugin:1.2.0"
+    classpath "org.postgresql:postgresql:9.4.1208"
+  }
+}
+
+apply plugin: 'org.liquibase.gradle'
+
+liquibase {
+  activities {
+    main {
+      changeLogFile "${projectDir}/src/db/main/db-changelog.xml"
+      url "jdbc:${dbType}://${dbHost}/${dbName}"
+      username dbUser 
+      password dbPass
+      classpath "${projectDir}/src/db/main"
+    }
+    data {
+      changeLogFile "${projectDir}/src/db/data/db-changelog.xml"
+      url "jdbc:${dbType}://${dbHost}/${dbName}"
+      username dbUser
+      password dbPass
+      classpath "${projectDir}/src/db/data"
+    }
+    runList = project.ext.runList
+  }
+}

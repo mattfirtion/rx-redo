@@ -1,0 +1,10 @@
+INSERT INTO muscle (name) VALUES ('Warm Up');
+INSERT INTO muscle (name) VALUES ('Legs 1');
+INSERT INTO muscle (name) VALUES ('Chest');
+INSERT INTO muscle (name) VALUES ('Back');
+INSERT INTO muscle (name) VALUES ('Triceps');
+INSERT INTO muscle (name) VALUES ('Biceps');
+INSERT INTO muscle (name) VALUES ('Legs 2');
+INSERT INTO muscle (name) VALUES ('Shoulders');
+INSERT INTO muscle (name) VALUES ('Core');
+INSERT INTO muscle (name) VALUES ('Stretch');

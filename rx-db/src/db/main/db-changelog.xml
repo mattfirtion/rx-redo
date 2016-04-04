@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+  <include file="com/mattfirtion/rx/2016-04-02/01-create-table-program.xml"/>
+  <include file="com/mattfirtion/rx/2016-04-02/01-create-table-release.xml"/>
+  <include file="com/mattfirtion/rx/2016-04-02/01-create-table-track.xml"/>
+  <include file="com/mattfirtion/rx/2016-04-02/01-create-table-muscle.xml"/>
+  <changeSet id="initial-vendors" author="matt">
+      <sqlFile path="com/mattfirtion/rx/2016-04-02/01-insert-program.sql"/>
+  </changeSet>
+  <changeSet id="initial-muscles" author="matt">
+      <sqlFile path="com/mattfirtion/rx/2016-04-02/01-insert-muscle.sql"/>
+  </changeSet>
+</databaseChangeLog>

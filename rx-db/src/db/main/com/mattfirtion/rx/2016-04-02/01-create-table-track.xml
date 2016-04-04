@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog/1.7"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.7
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.7.xsd">
+    <changeSet id="2016-04-02-01" author="matt">
+        <comment>Initial creation of track table</comment>
+        <createTable tableName="track">
+            <column name="id" type="int" autoIncrement="true"/>
+            <column name="track" type="varchar(100)"/>
+            <column name="artist" type="varchar(100)"/>
+            <column name="release_id" type="int"/>
+            <column name="muscle_id" type="int"/>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

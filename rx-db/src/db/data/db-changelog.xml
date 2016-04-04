@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+  <changeSet id="group-power-apr-16" author="matt">
+      <sqlFile path="com/mattfirtion/grouppower/group-power-apr-16.sql"/>
+  </changeSet>
+  <changeSet id="group-power-jan-16" author="matt">
+      <sqlFile path="com/mattfirtion/grouppower/group-power-jan-16.sql"/>
+  </changeSet>
+  <changeSet id="group-power-oct-15" author="matt">
+      <sqlFile path="com/mattfirtion/grouppower/group-power-oct-15.sql"/>
+  </changeSet>
+</databaseChangeLog>
