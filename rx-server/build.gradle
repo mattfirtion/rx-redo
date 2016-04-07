@@ -17,6 +17,11 @@ plugins {
 ext {
     spring_boot = "1.3.3.RELEASE"
     postgres_jdbc = "9.4.1208"
+    gradleWrapperVersion = project.gradleWrapperVersion
+    cacheDir = gradle.getGradleUserHomeDir() as String ?: "${System.getProperty("user.home")}/.cache/gradle"
+    new File(cacheDir).mkdirs()
+
+    commit = System.getenv("COMMIT_HASH") ?: "git rev-parse HEAD".execute().text.trim()
 }
 
 apply plugin: 'spring-boot'
@@ -55,7 +60,7 @@ task npmPackages(type: NpmTask, dependsOn: npmCacheConfig) {
     description = "Install Node.js packages"
     args = [ 'install' ]
     inputs.files file('package.json')
-    outputs.files file('node_modules')
+    outputs.files file('node_modules')    
 }
 
 task bowerInstall(type: NodeTask) {
@@ -65,18 +70,13 @@ task bowerInstall(type: NodeTask) {
             "--config.storage.registry=${cacheDir}/caches/bower/registry",
             'install']
     inputs.files file('bower.json')
-    outputs.files file('bower_components')
+    outputs.files file('src/main/resources/static/bower_components')
     dependsOn npmPackages
 }
 
 task bowerSyncJavascript(type: Sync) {
     from 'bower_components'
-    into "grails-app/assets/javascripts/bower_components"
-    exclude '**/*.min.js'
-    exclude '**/angular*/index.js'
-    exclude '**/angular*/ng*.js'
-    include 'jquery/dist/jquery.js'
-    include 'angular*/**/*.js'
+    into "src/main/resources/static/bower_components"
     dependsOn bowerInstall
 }
 
@@ -93,11 +93,6 @@ task bowerPackages() {
 }
 
 processResources.dependsOn bowerPackages
-assetCompile.dependsOn bowerPackages
 
-clean.delete << file('grails-app/assets/javascripts/bower_components')
-clean.delete << file('grails-app/assets/stylesheets/bower_components')
 clean.delete << file('node_modules')
 clean.delete << file('bower_components')
-
-build.dependsOn ':staticsite:generate'

@@ -6,10 +6,10 @@
   <body ng-app="myApp">
     <div class="container" ng-controller="AppController">
       <div class="page-header">
-        <h1>A checklist</h1>
+        <h1>Rx Re;eases</h1>
       </div>
-      <div class="alert alert-info" role="alert" ng-hide="tracks &amp;&amp; tracks.length > 0">
-        There are no tracks yet.
+      <div class="alert alert-info" role="alert" ng-hide="releases &amp;&amp; releases.length > 0">
+        There are no releases yet.
       </div>
       <form class="form-horizontal" role="form" ng-submit="addTrack(newTrack)">
         <div class="form-group" ng-repeat="track in tracks">

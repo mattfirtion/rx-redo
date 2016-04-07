@@ -1,6 +1,6 @@
 (function(angular) {
   var AppController = function($scope, Track) {
-    Trac.query(function(response) {
+    Track.query(function(response) {
       $scope.tracks = response ? response : [];
     });
     
@@ -14,17 +14,17 @@
       $scope.newTrack = "";
     };
     
-    $scope.updateItem = function(item) {
-      item.$update();
+    $scope.updateTrack = function(track) {
+      track.$update();
     };
     
-    $scope.deleteItem = function(item) {
-      item.$remove(function() {
-        $scope.items.splice($scope.items.indexOf(item), 1);
+    $scope.deleteTrack = function(track) {
+      track.$remove(function() {
+        $scope.tracks.splice($scope.tracks.indexOf(track), 1);
       });
     };
   };
   
-  AppController.$inject = ['$scope', 'Item'];
+  AppController.$inject = ['$scope', 'Track'];
   angular.module("myApp.controllers").controller("AppController", AppController);
 }(angular));

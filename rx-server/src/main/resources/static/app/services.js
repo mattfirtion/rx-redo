@@ -1,6 +1,6 @@
 (function(angular) {
-  var ItemFactory = function($resource) {
-    return $resource('/items/:id', {
+  var TrackFactory = function($resource) {
+    return $resource('/tracks/:id', {
       id: '@id'
     }, {
       update: {
@@ -12,6 +12,6 @@
     });
   };
   
-  ItemFactory.$inject = ['$resource'];
-  angular.module("myApp.services").factory("Item", ItemFactory);
+  TrackFactory.$inject = ['$resource'];
+  angular.module("myApp.services").factory("Track", TrackFactory);
 }(angular));
